@@ -1,0 +1,10 @@
+image: Ubuntu
+stack: jdk 11
+branches:
+  only:
+    - nano
+build: off
+
+build_script:
+  - chmod +x gradlew
+  - ./gradlew test --info
